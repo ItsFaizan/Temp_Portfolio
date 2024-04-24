@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;1,300&display=swap');
+
+@font-face {
+  font-family: 'BestermindRegular';
+  src: url('/fonts/BestermindRegular.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* declaring the css variables colors */
+:root {
+  --color-primary-accent: #f3f3f3;
+  --color-primary: #000;
+  --color-button: #3d486c;
+  --color-paragraph: #797979;
+  --color-div: #e0e0e0;
+  --color-button-text: rgb(255, 255, 255);
+  --color-background: #fff;
+  --color-anchor: #242734;
+  --color-anchor-hover: #864879;
+  --nav-bg-color: rgba(225, 225, 225, 0.4);
+  --color-nav-bg: rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='dark'] {
+  --color-primary-accent: #242734;
+  --color-primary: #fff;
+  --color-button: #242734;
+  --color-paragraph: #8a8a8a;
+  --color-div: #1b1d27;
+  --color-button-text: rgb(0, 0, 0);
+  --color-background: #323647;
+  --color-anchor: #ffffff;
+  --color-anchor-hover: #72147e;
+  --nav-bg-color: rgba(14, 14, 14, 0.4);
+  --color-nav-bg: rgba(0, 0, 0, 0.4);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: var(--color-anchor);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-anchor-hover);
+}
+
+section {
+  height: 100vh;
+}
+.MuiAvatar-root {
+  width: 80px !important;
+  height: 80px !important;
+  margin-top: -55px;
+  margin-bottom: 10px;
+  border: 2px solid var(--color-anchor-hover) !important;
+}
+
+@media screen and (max-width: 450px) {
+  section {
+    width: 100vw;
+  }
+}
